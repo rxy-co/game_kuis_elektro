@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageBox = document.querySelector(".question-image"); // Tambahan untuk gambar pertanyaan
 
     // Tambahkan elemen audio
-    const bgMusic = new Audio("audio/backsound.mp3");
-    const correctSound = new Audio("audio/correct.mp3");
-    const wrongSound = new Audio("audio/wrong.mp3");
+    const bgMusic = new Audio("backsound.mp3");
+    const correctSound = new Audio("correct.mp3");
+    const wrongSound = new Audio("wrong.mp3");
 
     // Looping backsound agar terus bermain
     bgMusic.loop = true;
@@ -90,13 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
             question: "Apa nama komponen ini?", 
             options: ["Transistor", "Dioda", "IC"], 
             answer: "Dioda",
-            image: "images/dioda.png"
+            image: "dioda.png"
         },
         { 
             question: "Apa nama komponen ini?",
             options: ["IC", "PCB", "Induktor"], 
             answer: "IC",
-            image: "images/IC.png"
+            image: "IC.png"
         }
     ];
 
