@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Elektronika</title>
+    <link rel="stylesheet" href="style-kuis.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1 class="quiz-title">⚡ Kuis Elektronika ⚡</h1>
+        <p class="question-box"></p>
+
+        <div class="options-box"></div>
+
+        <button class="next-btn" style="display: none;">Selanjutnya ▶</button>
+        
+
+       <!--<div class="game-info">
+            <p>Level: 1</p>
+            <p>Skor: <span id="score">0</span></p>
+        </div>--> 
+    </div>
+
+    <!-- Tambahin ini di dalam <body> -->
+    <div id="alertBox" class="alert-box">
+        <p id="alertText"></p>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+
+    <!--gambar kuis-->
+    <div class="question-container">
+        <p class="question-box"></p>
+        <img class="question-image" src="" alt="Gambar pertanyaan" style="display: none; width: 150px; height: auto;">
+    </div>
+    
+
+    <!--selesai-->
+    <div id="completionBox" class="completion-box">
+        <p id="completionText"></p>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

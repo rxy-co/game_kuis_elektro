@@ -1,0 +1,183 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    background: #0d1117;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Kuis */
+.quiz-container {
+    background: rgba(52, 235, 149, 0.15);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(52, 235, 149, 0.5);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Judul Kuis */
+.quiz-title {
+    font-size: 2rem;
+    color: #34eb95;
+    text-shadow: 0 0 10px #34eb95, 0 0 20px #34eb95;
+    margin-bottom: 15px;
+}
+
+/* Kotak Pertanyaan */
+.question-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Box Pilihan Jawaban */
+.options-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Tombol Jawaban */
+.option-btn {
+    background: #ffcc00;
+    color: #0d1117;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    background: #ffaa00;
+    box-shadow: 0 0 10px #ffaa00, 0 0 20px #ffaa00;
+}
+
+/* Tombol Selanjutnya */
+.next-btn {
+    width: 100%;
+    max-width: 300px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+    background: #0056b3;
+    box-shadow: 0 0 10px #0056b3, 0 0 20px #0056b3;
+}
+
+/* Informasi Game */
+.game-info {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+/* Tambahin ke style-kuis.css */
+.alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+    z-index: 999;
+    min-width: 250px;
+}
+
+.alert-success {
+    background-color: #34eb95;
+    color: #0a0a0a;
+    box-shadow: 0 0 20px #34eb95;
+}
+
+.alert-fail {
+    background-color: #f26565;
+    color: white;
+    box-shadow: 0 0 20px #f26565;
+}
+
+.alert-box button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.alert-box button:hover {
+    background-color: gray;
+}
+
+
+
+
+.completion-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: popUp 0.5s ease-out;
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
